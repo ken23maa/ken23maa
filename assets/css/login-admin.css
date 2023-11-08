@@ -1,0 +1,124 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background: url('../image/background-admin.png');
+}
+
+ .wrapper {
+    margin: auto;
+    margin-top: 100px;
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgb(255, 255, 255, 5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .login{
+    font-size: 1.2em;
+    color: #e7e7e7;
+    text-align: left;
+    display: inline-block;
+    text-decoration: none;
+    }
+
+
+    .register {
+        font-size: 0.6em;
+        margin-top: 1em;
+        text-decoration: none;
+        color: #b7bec5;
+        margin-left: 10px;
+    }
+
+    .register:hover{
+        text-decoration: underline;
+    }
+
+    .form-box p{
+        font-size: 1em;
+        color: #7f8081;
+        text-align: left;
+        margin-top: 0.3em;
+    }
+    
+    .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #f2f7fc;
+    margin: 30px 0;
+    }
+    
+    .input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #e9e9e9;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+    }
+    
+    .input-box input:focus~label,
+    .input-box input:valid~label{
+    top: -5px;
+    }
+    
+    
+    .input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #e3e8ec;
+    font-weight: 600;
+    padding: 0 7px;
+    }
+    
+    .input-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #ebebeb;
+    line-height: 57px;
+    }
+    
+    .btn{
+    width: 100%;
+    height: 45px;
+    margin-top: 15px;
+    background: #051a61;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+    }
+
+    .flex-container {
+    display: flex;
+    }
+    
+    .flex-container > div {
+    background-color: #f1f1f1;
+    margin: 20px;
+    position: relative;
+    }
